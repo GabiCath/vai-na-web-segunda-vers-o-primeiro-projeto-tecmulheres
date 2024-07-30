@@ -6,107 +6,159 @@
     <title>Katherine Johnson</title>
     <style>
         body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #f0f0f0; 
-}
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #f0f0f0; 
+        }
 
-nav {
-    background-color: rgb(204, 45, 98); 
-    padding: 10px; 
-}
+        nav {
+            background-color: rgb(204, 45, 98); 
+            padding: 10px; 
+        }
 
-nav ul {
-    list-style-type: none; 
-    margin: 0; 
-    padding: 0; 
-    display: flex; 
-    justify-content: center; 
-}
+        nav ul {
+            list-style-type: none; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap;
+        }
 
-nav ul li {
-    margin-right: 20px; 
-}
+        nav ul li {
+            margin-right: 20px; 
+        }
 
-nav ul li a {
-    color: pink; 
-    text-decoration: none; 
-    padding: 10px 15px; 
-    background-color: black; 
-    border-radius: 5px; 
-}
+        nav ul li a {
+            color: pink; 
+            text-decoration: none; 
+            padding: 10px 15px; 
+            background-color: black; 
+            border-radius: 5px; 
+        }
 
-nav ul li a:hover {
-    background-color: #ff7bd3; 
-}
+        nav ul li a:hover {
+            background-color: #ff7bd3; 
+        }
 
-h1 {
-    color: rgb(204, 45, 98); 
-    background-color: #f0f0f0;
-    text-align: center;
-} 
+        h1 {
+            color: rgb(204, 45, 98); 
+            background-color: #f0f0f0;
+            text-align: center;
+        } 
 
-h2 {
-    color: rgb(117, 17, 34);
-    text-align: center;
-}
+        h2 {
+            color: rgb(117, 17, 34);
+            text-align: center;
+        }
 
-#rainha {
-    max-width: 800px; 
-    margin: 20px auto; 
-    margin: 20px auto; 
-    line-height: 1.6; 
-}
+        #rainha {
+            max-width: 800px; 
+            margin: 20px auto; 
+            line-height: 1.6; 
+        }
 
-main {
-    flex: 1; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-}
+        main {
+            flex: 1; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+        }
 
-.imagem-galeria {  
-    width: 900px; 
-    height: 500px; 
-    border-radius: 10px; 
-    margin: 10px; 
-    transition: transform 0.3s ease; 
-}
+        .imagem-galeria {  
+            width: 100%;
+            max-width: 900px; 
+            height: auto; 
+            border-radius: 10px; 
+            margin: 10px; 
+            transition: transform 0.3s ease; 
+        }
 
-.imagem-galeria:hover {
-    transform: scale(1.1); 
-}
+        .imagem-galeria:hover {
+            transform: scale(1.1); 
+        }
 
-footer {
-    background-color: rgb(204, 45, 98);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    min-height: 60px; 
-}
+        footer {
+            background-color: rgb(204, 45, 98);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            min-height: 60px; 
+        }
 
-footer p {
-    margin: 0;
-    line-height: 1.5;
-}
+        footer p {
+            margin: 0;
+            line-height: 1.5;
+        }
 
-footer a {
-    color: white; 
-    text-decoration: none; 
-}
+        footer a {
+            color: white; 
+            text-decoration: none; 
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                margin-right: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            #rainha {
+                font-size: 14px;
+                margin: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+            #rainha {
+                font-size: 12px;
+                margin: 5px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -129,14 +181,12 @@ footer a {
         <img src="katherine1.png" alt="Outra imagem produzida com IA, uma imagem da Katherine" class="imagem-galeria">
         <img src="katherine2.png" alt="Uma imagem produzida com IA, uma imagem da Katherine" class="imagem-galeria">
         <p id="rainha">Katherine Johnson era uma matemática brilhante, que superou barreiras de gênero e raça em uma época em que a segregação racial ainda era uma realidade nos Estados Unidos. Ela não era apenas uma 'calculadora humana' ou uma funcionária da NASA. Katherine desempenhou um papel crucial na corrida espacial, realizando cálculos vitais que garantiram o sucesso das missões espaciais, incluindo o histórico pouso na Lua da Apollo 11. Sua precisão matemática e habilidades analíticas permitiram que astronautas como John Glenn confiassem nela cegamente, quebrando estereótipos e abrindo caminho para futuras gerações de mulheres e afro-americanos na ciência e tecnologia. Sua história nos lembra que, com coragem e determinação, podemos alcançar as estrelas, literalmente.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3Y8a3ko_sV0?si=Ea7t3Rmdl1YuUtmL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
-        <br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/uS8_wI5Aetc?si=meEGzV8xS88xN6cm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <br>
-        </main>
+        <iframe src="https://www.youtube.com/embed/3Y8a3ko_sV0?si=Ea7t3Rmdl1YuUtmL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+        <iframe src="https://www.youtube.com/embed/uS8_wI5Aetc?si=meEGzV8xS88xN6cm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
     <footer>
-        <p>linkedIn:https://www.linkedin.com/in/gabriela-catharine-andreatta-profissionalmultidisciplinar/ </p>
-        <p>Github: https://github.com/GabiCath</p>
+        <p>linkedIn: <a href="https://www.linkedin.com/in/gabriela-catharine-andreatta-profissionalmultidisciplinar/" target="_blank">https://www.linkedin.com/in/gabriela-catharine-andreatta-profissionalmultidisciplinar/</a></p>
+        <p>Github: <a href="https://github.com/GabiCath" target="_blank">https://github.com/GabiCath</a></p>
     </footer>
 </body>
 </html>
