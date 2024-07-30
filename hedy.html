@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hedy Lamarr</title>
-    <style>
+     <style>
         body, html {
             margin: 0;
             padding: 0;
@@ -64,7 +64,7 @@
         }
 
         #rainha {
-            max-width: 800px;
+            max-width: 90%;
             margin: 20px auto;
             line-height: 1.6;
         }
@@ -79,8 +79,7 @@
         }
 
         .imagem-galeria {
-            width: 90%;
-            max-width: 900px;
+            max-width: 100%;
             height: auto;
             border-radius: 10px;
             margin: 10px;
@@ -90,7 +89,7 @@
         .imagem-galeria:hover {
             transform: scale(1.1);
         }
-        
+
         footer {
             background-color: rgb(204, 45, 98);
             color: white;
@@ -111,8 +110,13 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
             nav ul {
                 flex-direction: column;
+                align-items: center;
             }
 
             nav ul li {
@@ -123,7 +127,7 @@
                 width: 100%;
             }
 
-              iframe {
+            iframe {
             width: 100%;
             max-width: 560px;
             height: auto;
