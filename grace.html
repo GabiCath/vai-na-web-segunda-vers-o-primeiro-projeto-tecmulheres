@@ -19,77 +19,75 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-color: #f0f0f0; 
+            background-color: #f0f0f0;
         }
 
         nav {
-            background-color: rgb(204, 45, 98); 
-            padding: 10px; 
+            background-color: rgb(204, 45, 98);
+            padding: 10px;
         }
 
         nav ul {
-            list-style-type: none; 
-            margin: 0; 
-            padding: 0; 
-            display: flex; 
-            justify-content: center; 
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
             flex-wrap: wrap;
         }
 
         nav ul li {
-            margin: 5px; 
+            margin: 5px;
         }
 
         nav ul li a {
-            color: pink; 
-            text-decoration: none; 
-            padding: 10px 15px; 
-            background-color: black; 
-            border-radius: 5px; 
+            color: pink;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: black;
+            border-radius: 5px;
         }
 
         nav ul li a:hover {
-            background-color: #ff7bd3; 
+            background-color: #ff7bd3;
         }
 
         h1 {
-            color: rgb(204, 45, 98); 
+            color: rgb(204, 45, 98);
             background-color: #f0f0f0;
             text-align: center;
-            margin: 10px 0;
-        } 
+        }
 
         h2 {
             color: rgb(117, 17, 34);
             text-align: center;
-            margin: 5px 0;
         }
 
         #rainha {
-            max-width: 90%; 
-            margin: 20px auto; 
-            line-height: 1.6; 
+            max-width: 90%;
+            margin: 20px auto;
+            line-height: 1.6;
         }
 
         main {
-            flex: 1; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            justify-content: center; 
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px;
         }
 
-        .imagem-galeria {  
-            width: 100%; 
-            max-width: 900px; 
-            height: auto; 
-            border-radius: 10px; 
-            margin: 10px; 
-            transition: transform 0.3s ease; 
+        .imagem-galeria {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease;
         }
 
         .imagem-galeria:hover {
-            transform: scale(1.1); 
+            transform: scale(1.1);
         }
 
         footer {
@@ -98,7 +96,7 @@
             text-align: center;
             padding: 20px;
             width: 100%;
-            min-height: 60px; 
+            min-height: 60px;
         }
 
         footer p {
@@ -107,24 +105,29 @@
         }
 
         footer a {
-            color: white; 
-            text-decoration: none; 
+            color: white;
+            text-decoration: none;
         }
 
         @media (max-width: 768px) {
-            .imagem-galeria {
-                width: 100%;
+            body {
+                font-size: 14px;
             }
 
             nav ul {
                 flex-direction: column;
+                align-items: center;
             }
 
             nav ul li {
                 margin: 5px 0;
             }
 
-             iframe {
+            .imagem-galeria {
+                width: 100%;
+            }
+
+            iframe {
             width: 100%;
             max-width: 560px;
             height: auto;
