@@ -6,109 +6,137 @@
     <title>Mulheres em tecnologia</title>
     <style>
         body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #f0f0f0; 
-}
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #f0f0f0;
+        }
 
-nav {
-    background-color: rgb(204, 45, 98); 
-    padding: 10px; 
-}
+        nav {
+            background-color: rgb(204, 45, 98);
+            padding: 10px;
+        }
 
-nav ul {
-    list-style-type: none; 
-    margin: 0; 
-    padding: 0; 
-    display: flex; 
-    justify-content: center; 
-}
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-nav ul li {
-    margin-right: 20px; 
-}
+        nav ul li {
+            margin-right: 20px;
+        }
 
-nav ul li a {
-    color: pink; 
-    text-decoration: none; 
-    padding: 10px 15px; 
-    background-color: black; 
-    border-radius: 5px; 
-}
+        nav ul li a {
+            color: pink;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: black;
+            border-radius: 5px;
+        }
 
-nav ul li a:hover {
-    background-color: #ff7bd3; 
-}
+        nav ul li a:hover {
+            background-color: #ff7bd3;
+        }
 
-h1 {
-    color: rgb(204, 45, 98); 
-    background-color: #f0f0f0;
-    text-align: center;
-} 
+        h1 {
+            color: rgb(204, 45, 98);
+            background-color: #f0f0f0;
+            text-align: center;
+        }
 
-h2 {
-    color: rgb(117, 17, 34);
-    text-align: center;
-}
+        h2 {
+            color: rgb(117, 17, 34);
+            text-align: center;
+        }
 
-#rainha {
-    max-width: 800px; 
-    margin: 20px auto; 
-    margin: 20px auto; 
-    line-height: 1.6; 
-}
+        #rainha {
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
 
-main {
-    flex: 1; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-}
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
-#imagem-galeria {
-    width: 900px; 
-    height: 500px; 
-    object-fit: cover; 
-    border-radius: 10px; 
-    margin: 10px; 
-    transition: transform 0.3s ease; 
-}
+        #imagem-galeria {
+            width: 90%;
+            max-width: 900px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
 
-#imagem-galeria:hover {
-    transform: scale(1.1); 
-}
+        #imagem-galeria:hover {
+            transform: scale(1.1);
+        }
 
-footer {
-    background-color: rgb(204, 45, 98);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    min-height: 60px; 
-}
+        iframe {
+            width: 90%;
+            max-width: 560px;
+            height: auto;
+            margin: 10px 0;
+        }
 
-footer p {
-    margin: 0;
-    line-height: 1.5;
-}
+        footer {
+            background-color: rgb(204, 45, 98);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            min-height: 60px;
+        }
 
-footer a {
-    color: white; 
-    text-decoration: none; 
-}
+        footer p {
+            margin: 0;
+            line-height: 1.5;
+        }
 
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            #rainha {
+                margin: 10px;
+                font-size: 14px;
+            }
+
+            iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -125,21 +153,21 @@ footer a {
         </nav>
     </header>
     <main>
-            <h1>Mulheres em tecnologia:</h1>
-            <h2>As mulheres em tecnologia mudaram o mundo?</h2>
-            <img src="inicial.png" alt="Uma imagem produzida com IA, várias mulheres em tech, com tons de rosa"  id="imagem-galeria">
-            <p id="rainha">Costumam dizer que as mulheres NÃO tiveram contribuições na história da humanidade, que as mulheres NÃO descobriram NADA?. Isso é MENTIRA. <strong>Mulheres descobriram e mudaram o mundo SIM.</strong> Desde o começo da computação até os avanços futuristas de hoje, heroínas como <strong>Ada Lovelace</strong>, a primeira programadora, e <strong>Grace Hopper</strong>, a pioneira do COBOL, abriram caminho para todas nós. Imagine uma era sem a genialidade de <strong>Hedy Lamarr</strong>, cujas invenções revolucionaram a tecnologia de comunicação e pavimentaram o caminho para o Wi-Fi e o Bluetooth que usamos todos os dias! Ou sem a matemática brilhante de <strong>Katherine Johnson</strong>, cujos cálculos precisos foram essenciais para o sucesso das missões espaciais da NASA, continuam a desafiar fronteiras e a moldar o futuro da tecnologia globalmente. Então, vamos aplaudir essas heroínas modernas e todas as mulheres que estão quebrando barreiras no mundo da tecnologia. Juntas, estamos construindo um futuro digital mais inclusivo. 🔧💻</p>
-            <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/9cgKiS5DgJM?si=0VogNUCG8tzUVORb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BYcJLACz2pY?si=yxPb6VqIoMz1BShj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Qq9h2vVBZmQ?si=GNk26lUa_7ne4FHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <br>
+        <h1>Mulheres em tecnologia:</h1>
+        <h2>As mulheres em tecnologia mudaram o mundo?</h2>
+        <img src="inicial.png" alt="Uma imagem produzida com IA, várias mulheres em tech, com tons de rosa" id="imagem-galeria">
+        <p id="rainha">Costumam dizer que as mulheres NÃO tiveram contribuições na história da humanidade, que as mulheres NÃO descobriram NADA?. Isso é MENTIRA. <strong>Mulheres descobriram e mudaram o mundo SIM.</strong> Desde o começo da computação até os avanços futuristas de hoje, heroínas como <strong>Ada Lovelace</strong>, a primeira programadora, e <strong>Grace Hopper</strong>, a pioneira do COBOL, abriram caminho para todas nós. Imagine uma era sem a genialidade de <strong>Hedy Lamarr</strong>, cujas invenções revolucionaram a tecnologia de comunicação e pavimentaram o caminho para o Wi-Fi e o Bluetooth que usamos todos os dias! Ou sem a matemática brilhante de <strong>Katherine Johnson</strong>, cujos cálculos precisos foram essenciais para o sucesso das missões espaciais da NASA, continuam a desafiar fronteiras e a moldar o futuro da tecnologia globalmente. Então, vamos aplaudir essas heroínas modernas e todas as mulheres que estão quebrando barreiras no mundo da tecnologia. Juntas, estamos construindo um futuro digital mais inclusivo. 🔧💻</p>
+        <br>
+        <iframe src="https://www.youtube.com/embed/9cgKiS5DgJM?si=0VogNUCG8tzUVORb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <iframe src="https://www.youtube.com/embed/BYcJLACz2pY?si=yxPb6VqIoMz1BShj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <iframe src="https://www.youtube.com/embed/Qq9h2vVBZmQ?si=GNk26lUa_7ne4FHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
     </main>
     <footer>
-        <p>linkedIn:https://www.linkedin.com/in/gabriela-catharine-andreatta-profissionalmultidisciplinar/ </p>
-        <p>Github: https://github.com/GabiCath</p>
+        <p>linkedIn: <a href="https://www.linkedin.com/in/gabriela-catharine-andreatta-profissionalmultidisciplinar/" target="_blank">https://www.linkedin.com/in/gabriela-catharine-andreatta-profissionalmultidisciplinar/</a></p>
+        <p>Github: <a href="https://github.com/GabiCath" target="_blank">https://github.com/GabiCath</a></p>
     </footer>
 </body>
 </html>
