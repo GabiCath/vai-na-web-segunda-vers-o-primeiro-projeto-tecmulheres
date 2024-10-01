@@ -16,5 +16,3 @@ O projeto consiste em uma série de páginas que apresentam algumas das principa
 - Uso de mais tags HTML para estruturar o conteúdo de forma semântica.
 - Estilos aprimorados com CSS, garantindo um layout mais agradável e responsivo.
 
--
-
